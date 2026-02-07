@@ -1,3 +1,4 @@
+import { Button } from 'react-bootstrap'
 import React from 'react'
 
 const Fornecedores = () => {
@@ -8,6 +9,9 @@ const Fornecedores = () => {
                     <i className="bi bi-building me-2"></i>
                     Fornecedores
                 </h2>
+                <Button variant='light'> 
+                    Novo Fornecedor 
+                </Button>
             </div>
         </div>
     )

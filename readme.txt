@@ -1,39 +1,20 @@
-Criação do Projeto com Vite
+1. Criar estrutura do projeto
+projeto-front/
+├── src/
+│   ├── pages/
+│   └── components/
 
 
-Siga atentamente as etapas abaixo:
+2. Instalar dependências
 
-No terminal, execute o comando:
+-> npm install
 
-create vite@latest
+Pacotes principais utilizados:
 
+react-router-dom → controle de rotas e navegação
 
-Quando solicitado, informe o nome do projeto:
+axios → comunicação com a API
 
-sistema-gestao
+bootstrap / react-bootstrap → interface e componentes visuais
 
-
-Selecione o framework:
-
-React
-
-Escolha a variante:
-
-JavaScript
-
-Para a opção de recursos experimentais:
-
-Selecione No
-
-Quando perguntado se deseja instalar as dependências com npm e iniciar o projeto automaticamente:
-
-Selecione Sim (Yes)
-
-Após a conclusão dessas etapas, o projeto estará configurado e pronto para uso, com o ambiente de desenvolvimento iniciado automaticamente.
-
-Após a conclusão dessas etapas, o professor Kelson disponibilizou os arquivos de estilização do projeto para o Sistema de Gestão.
-
-Os arquivos index.css e app.css foram enviados para a plataforma do projeto e podem ser acessados por meio do Classroom ou do repositório no GitHub.
-
-Os alunos devem copiar esses arquivos e adicioná-los corretamente ao projeto, conforme orientado em aula.
-
+json-server → simulação do backend/banco de dados

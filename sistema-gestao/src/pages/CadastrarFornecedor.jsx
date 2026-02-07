@@ -27,27 +27,113 @@ const CadastrarFornecedor = () => {
                 <Card.Body className='p-4'>
                     <Form>
                         <Row>
+                            {/* COLUNA ESQUERDA */}
                             <Col md={6}>
-                                <Form.Group className='m6-3'>
+
+                                <Form.Group className="mb-3">
                                     <Form.Label>Nome</Form.Label>
-                                    <Form.Control type='text' />
+                                    <Form.Control
+                                        type="text"
+                                        value={nome}
+                                        onChange={e => setnome(e.target.value)}
+                                    />
                                 </Form.Group>
-                                <Form.Group className='m6-3'>
+
+                                <Form.Group className="mb-3">
                                     <Form.Label>CNPJ</Form.Label>
-                                    <Form.Control type='text' />
+                                    <Form.Control
+                                        type="text"
+                                        value={cnpj}
+                                        onChange={e => setcnpj(e.target.value)}
+                                    />
                                 </Form.Group>
-                                <Form.Group className='m6-3'>
+
+                                <Form.Group className="mb-3">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control type='text' />
+                                    <Form.Control
+                                        type="email"
+                                        value={email}
+                                        onChange={e => setemail(e.target.value)}
+                                    />
                                 </Form.Group>
-                                <Form.Group className='m6-3'>
+
+                                <Form.Group className="mb-3">
                                     <Form.Label>Telefone</Form.Label>
-                                    <Form.Control type='text' />
+                                    <Form.Control
+                                        type="text"
+                                        value={telefone}
+                                        onChange={e => settelefone(e.target.value)}
+                                    />
                                 </Form.Group>
+
                             </Col>
+
+                            {/* COLUNA DIREITA */}
                             <Col md={6}>
+
+                                <Form.Group className="mb-3">
+                                    <Form.Label>CEP</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        value={cep}
+                                        onChange={e => setcep(e.target.value)}
+                                    />
+                                </Form.Group>
+
+                                <Form.Group className="mb-3">
+                                    <Form.Label>Logradouro</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        value={logradouro}
+                                        onChange={e => setlogradouro(e.target.value)}
+                                    />
+                                </Form.Group>
+
+                                <Form.Group className="mb-3">
+                                    <Form.Label>Número</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        value={numero}
+                                        onChange={e => setnumero(e.target.value)}
+                                    />
+                                </Form.Group>
+
+                                <Form.Group className="mb-3">
+                                    <Form.Label>Bairro</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        value={bairro}
+                                        onChange={e => setbairro(e.target.value)}
+                                    />
+                                </Form.Group>
+
+                                <Row>
+                                    <Col md={8}>
+                                        <Form.Group className="mb-3">
+                                            <Form.Label>Cidade</Form.Label>
+                                            <Form.Control
+                                                type="text"
+                                                value={cidade}
+                                                onChange={e => setcidade(e.target.value)}
+                                            />
+                                        </Form.Group>
+                                    </Col>
+
+                                    <Col md={4}>
+                                        <Form.Group className="mb-3">
+                                            <Form.Label>UF</Form.Label>
+                                            <Form.Control
+                                                type="text"
+                                                value={uf}
+                                                onChange={e => setuf(e.target.value)}
+                                            />
+                                        </Form.Group>
+                                    </Col>
+                                </Row>
+
                             </Col>
                         </Row>
+
                     </Form>
                 </Card.Body>
             </Card>
